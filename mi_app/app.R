@@ -1,8 +1,4 @@
 
-
-
-
-
 library(shiny)
 library(bslib)
 library(dplyr)
@@ -57,5 +53,17 @@ server <- function(input, output, session){
 }
 
 shinyApp(ui, server)
+
+
+
+# library(shinylive)
+# 
+# # Exporta la app a HTML y recursos estáticos
+shinylive::export(appdir = "test_app", destdir = "docs")
+
+
+
+
+
 
 
